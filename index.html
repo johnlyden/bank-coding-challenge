@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Table of Names and Ages</title>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <content>
+      <h2>People & Ages</h2>
+      <div class="mdl-cell mdl-cell--12-col check">
+        <p>click the checkbox in order to hide all users in table that are under the age 65</p>
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="hide-age-under-65">
+          <input type="checkbox" id="hide-age-under-65" class="mdl-checkbox__input">
+          <span class="mdl-checkbox__label">Remove under 65</span>
+        </label>
+      </div>
+      <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp sortable-table" id="age-list" summary="This table can be sorted according to age and filter out people younger than 65 with the checkbox.  Click on age heading to toggle between ascending and descending sort order.">
+        <caption>Sortable table of people and their age</caption>
+        <thead>
+          <tr class="age-table-head">
+            <th scope="col" id="c1" class="mdl-data-table__cell--non-numeric">Name</th>
+            <th scope="col" id="c2" class="mdl-data-table__cell--non-numeric sortable"><span class="arrow">&#9660;</span>Age</th>
+          </tr>
+        </thead>
+        <tbody id="list">
+          <!-- append rows from api call -->
+        </tbody>
+      </table>
+    </content>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

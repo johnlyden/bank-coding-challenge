@@ -1,0 +1,15 @@
+// use if myjson.com is down
+
+[
+  {"name": "John Lyden", "age": "29"},
+  {"name": "Lina Zoo", "age": "28"},
+  {"name": "Bob Reynolds", "age": "72"},
+  {"name": "Christopher Soprano", "age": "35"},
+  {"name": "Bob Barker", "age": "82"},
+  {"name": "Al Capone", "age": "30"},
+  {"name": "GrandMa Lyden", "age": "87"},
+  {"name": "Uncle Junior", "age": "66"},
+  {"name": "Al Bundy", "age": "55"},
+  {"name": "Cam Newton", "age": "26"}
+
+]
